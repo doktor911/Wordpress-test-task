@@ -1,0 +1,169 @@
+body{
+	font-family: montserrat,sans-serif;
+	}
+main {
+    min-height: 100vh;
+}
+h2{
+	font-size: 20px;
+}
+a:hover{
+	text-decoration: none;
+}
+.header {
+    padding: 28px 0px;
+    position: relative;
+}
+.entry-header{
+text-align: center;
+}
+.burger_btn {
+ 	display: inline-block;
+  	cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.mob_menu {
+		display: none;
+	    position: absolute;
+	    top: 100px;
+	    width: 100%;
+	    height: 100vh;
+	    background: #fff;
+	    z-index: 12;
+	}
+	.mob_menu .menu{
+		flex-direction: column;
+	}
+	.mob_menu li{
+		text-align: center;
+	}
+		.mob_menu .menu li:last-child{
+			padding-right: 30px;
+		}
+.post_image {
+    padding-top: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.menu li{
+	text-decoration: none;
+    list-style: none;
+    padding: 15px 30px;
+}
+.menu li:last-child{
+	padding-right: 0px;
+}
+.menu li a{
+	color: #1e1e1e;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+.footer{
+	background-color: #1e1e1e;
+	padding: 50px 0px;
+}
+.footer_items {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.footer-logo {
+    width: 90px;
+    margin-right: 22px;
+}
+.footer_img{
+	padding-top: 60%;
+	background-repeat: no-repeat;
+}
+.rights p{
+	color: #fff;
+	margin: 0px;
+	font-size: 11px;
+}
+.btn_to_top{
+	position: relative;
+
+}
+.btn_to_top a{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 11px
+}
+.btn_to_top:after{
+	content: "";
+    position: absolute;
+    top: 9px;
+    left: 85px;
+    color: #fff;
+    padding-top: 10%;
+    width: 10px;
+    height: 10px;
+    background-image: url(/wp-content/uploads/2020/08/arrow.png);
+    background-repeat: no-repeat;
+
+}
+.film_img{
+	padding-top: 100%;
+}
+.load_more_holder {
+    width: 100%;
+    text-align: center;
+}
+.contact_block{
+	display:flex;
+}
+.block{
+	width: 50%;
+	padding: 20px;
+}
+.img_block{
+	padding-top: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (min-width: 768px){
+
+	.burger_btn {
+	 	display: none;
+	 }
+	 
+}
+@media (max-width: 768px) {
+	.main_menu{
+		display: none;
+
+	}
+	 .burger_btn{
+	 	display: block;
+	 }
+	
+}
